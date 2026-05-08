@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="Jetchat"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+
+        <activity android:name=".MainActivity" />
+
+        <service
+            android:name=".floating.FloatingBubbleService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
